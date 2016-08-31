@@ -2,33 +2,21 @@
 // Daniel Shiffman
 // http://www.learningprocessing.com
 
-// Example 1-5: Zoog
+// Example 1-1: stroke and fill
+
 function setup() {
   createCanvas(480, 270);
-  ellipseMode(CENTER);
-  rectMode(CENTER); 
 }
 
 function draw() {
+  background(255, 0, 0, 50);
   
-  background(255);
+  stroke(255); 
+  fill(150); 
+  rect(200,50,75,100);
 
-  // Body
-  stroke(0);
-  fill(150);
-  rect(240, 145, 20, 100);
-
-  // Head
-  fill(255);
-  ellipse(240, 115, 60, 60); 
-
-  // Eyes
-  fill(0); 
-  ellipse(221, 115, 16, 32); 
-  ellipse(259, 115, 16, 32);
-
-  // Legs
-  stroke(0);
-  line(230, 195, 220, 205);
-  line(250, 195, 260, 205); 
+  stroke(0); 
+  fill(0, 0, 255, 20); 
+  ellipse(200, 50, 50, 50);
+  rect(300,50,75,100);
 }
