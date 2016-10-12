@@ -52,7 +52,7 @@ PacMan.prototype.draw = function () {
 	arc( 0, 0, this.diam, this.diam, PI*this.mouthAngle, -PI*this.mouthAngle, PIE );
 
 	fill(color("Black"));
-	arc( this.eyePos, -this.eyePos * 2, this.eyeDiam, this.eyeDiam, PI*this.mouthAngle, -PI*this.mouthAngle, PIE );
+	arc( this.eyePos, -this.eyePos * 2, this.eyeDiam, this.eyeDiam, PI*this.mouthAngle * 2, -PI*this.mouthAngle * 2, PIE );
 
 
 	pop();
