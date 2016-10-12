@@ -8,7 +8,7 @@ function draw() {
 	// This is a rectangle
 	stroke(0);
 	fill(100, 100, 0);
-  rect(50, 100, 100, 70)
+	rect(50, 100, 100, 70);
 
 	// This is a traingle
 	// noStroke();
