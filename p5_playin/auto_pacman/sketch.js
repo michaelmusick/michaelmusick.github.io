@@ -3,18 +3,18 @@
 * @Date:   04-03-2016 16:11
 * @Email:  michael@michaelmusick.com
 * @Last modified by:   michaelmusick
-* @Last modified time: 12-10-2016 12:49
+* @Last modified time: 12-10-2016 20:34
 
 Automatic PacMan Example
-
 */
 
 // Define an empty PacMan object Array
 var pacmans = [];
-var numPacMans = 4;
+var numPacMans = 7;
 
+// setup function
 function setup() {
-	createCanvas(1000, 600);
+	createCanvas(800, 400);
 
 	// create some pacmans
 	for (var i = 0; i < numPacMans; i++) {
@@ -22,17 +22,19 @@ function setup() {
 	}
 }
 
+// draw loop
 function draw() {
+	var tempArr = [];
 	background(200);
 
+	// update pacman positions
 	for (var i = 0; i < pacmans.length; i++) {
+		// check neihbors by passing in an array of other PacMan's
+		tempArr = pacmans.slice(0,i);
+		tempArr = tempArr.concat( pacmans.slice(i+1, pacmans.length) );
+		pacmans[i].checkPos( tempArr );
+
 		pacmans[i].draw();
 	}
-}
 
-// TODO: finish the check position 
-function checkPos(obj1, obj2) {
-	if( dist( obj1.xpos, obj1.ypos, obj2.xpos, obj2.ypos) <= obj1.radius + obj2.radius ){
-		obj1.tempHold
-	}
 }
