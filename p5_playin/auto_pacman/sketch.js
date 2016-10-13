@@ -3,7 +3,7 @@
 * @Date:   04-03-2016 16:11
 * @Email:  michael@michaelmusick.com
 * @Last modified by:   michaelmusick
-* @Last modified time: 12-10-2016 20:41
+* @Last modified time: 12-10-2016 20:44
 
 Automatic PacMan Example
 */
@@ -18,7 +18,8 @@ function setup() {
 
 	// create some pacmans
 	for (var i = 0; i < numPacMans; i++) {
-		pacmans[i] = new PacMan((i+1)*80, 200);
+		pacmans[i] = new PacMan((i+1)*80, height*(i/numPacMans));
+		// pacmans[i] = new PacMan(200, 200);
 	}
 }
 
