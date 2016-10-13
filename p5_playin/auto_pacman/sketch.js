@@ -3,22 +3,22 @@
 * @Date:   04-03-2016 16:11
 * @Email:  michael@michaelmusick.com
 * @Last modified by:   michaelmusick
-* @Last modified time: 12-10-2016 20:34
+* @Last modified time: 12-10-2016 20:41
 
 Automatic PacMan Example
 */
 
 // Define an empty PacMan object Array
 var pacmans = [];
-var numPacMans = 7;
+var numPacMans = 12;
 
 // setup function
 function setup() {
-	createCanvas(800, 400);
+	createCanvas(1000, 600);
 
 	// create some pacmans
 	for (var i = 0; i < numPacMans; i++) {
-		pacmans[i] = new PacMan(30+(i*120), 200);
+		pacmans[i] = new PacMan((i+1)*80, 200);
 	}
 }
 
