@@ -2,10 +2,10 @@
 
 
 // constructor for PacMan
-function PacMan(xpos, ypos) {
+function PacMan(xpos, ypos, diam) {
 
 	// shape
-	this.diam = 80;
+	this.diam = diam;
 	this.radius = this.diam / 2;
 	this.eyePos = this.diam / 7;
 	this.eyeDiam = this.diam / 8;
@@ -112,8 +112,8 @@ PacMan.prototype.move = function () {
 
 // Timer
 PacMan.prototype.timer = function () {
-	var curTime = this.curTime / frameRate();
-	if ( curTime >= this.targetTime ){
+	var curTime = this.curTime ;
+	if ( curTime >= this.targetTime*frameRate() ){
 		// change direction and update timer
 		this.changeDirection();
 	} else {
