@@ -40,10 +40,10 @@ excerpt_separator: "\n\n"
 
 # Serving
 detach:  false
-# port:    4000
-# host:    127.0.0.1
-host:    "https://michaelmusick.github.io/"
-baseurl: "scotch_jekyll_bootstrap/" # does not include hostname
+port:    4000
+host:    127.0.0.1
+# host:    "https://michaelmusick.github.io/"
+baseurl: "/scotch_jekyll_bootstrap/" # does not include hostname
 
 # Outputting
 permalink:     /:title.html
