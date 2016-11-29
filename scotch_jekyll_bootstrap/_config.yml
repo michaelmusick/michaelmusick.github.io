@@ -12,6 +12,8 @@ destination: ./_site
 plugins_dir: ./_plugins
 layouts_dir: ./_layouts
 data_dir: ./_data
+sass:
+    sass_dir: _sass
 # collections: null
 
 # Handling Reading
