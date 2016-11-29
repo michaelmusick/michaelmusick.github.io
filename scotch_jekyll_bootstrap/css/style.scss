@@ -1,8 +1,8 @@
 ---
 frontmatter: frontMatter
 ---
-@import '_bootstrap';
-@import 'syntax-highlighting';
+@import '../_sass/_bootstrap';
+@import '../_sass/syntax-highlighting';
 
 
 $scotch-primary: rgb(95, 69, 255);
