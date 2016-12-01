@@ -1,106 +1,51 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }}</title>
+  <head>
+    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
 
     {% include meta.html %}
 
     <!--[if lt IE 9]>
-    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
 
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
-</head>
+  </head>
 
-<body>
-    <!-- Top Bar and Navigation -->
-    <div class="main-wrapper">
+  <body>
+    <div class="wrapper-masthead">
+      <div class="container">
+        <header class="masthead clearfix">
+          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
 
+          <div class="site-info">
+            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
+            <p class="site-description">{{ site.description }}</p>
+          </div>
 
-        <div class="off-canvas-wrapper">
-            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
-
-                <!-- off-canvas title bar for 'small' screen -->
-                <div class="title-bar" data-responsive-toggle="widemenu" data-hide-for="medium">
-                    <div class="title-bar-left">
-                        <button class="menu-icon" type="button" data-open="offCanvasLeft"></button>
-                        <span class="title-bar-title"><h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></span>
-                        </div>
-                    </div>
-
-                    <!-- off-canvas left menu -->
-                    <div class="off-canvas position-left" id="offCanvasLeft" data-off-canvas>
-                        <ul class="vertical dropdown menu" data-dropdown-menu>
-                            <li><a href="left_item_1">Left item 1</a></li>
-                            <li><a href="left_item_2">Left item 2</a></li>
-                            <li><a href="left_item_3">Left item 3</a></li>
-                        </ul>
-                    </div>
-
-                    <!-- "wider" top-bar menu for 'medium' and up -->
-                    <div id="widemenu" class="top-bar">
-                        <div class="top-bar-left">
-                            <ul class="dropdown menu" data-dropdown-menu>
-                                <li class="menu-text">Michael Musick</li>
-                                <li class="has-submenu">
-                                    <a href="{{ site.baseurl }}/">Home</a>
-
-                                </li>
-                                <li class="has-submenu">
-                                    <a href="{{ site.baseurl }}/about">About</a>
-                                    
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="top-bar-right">
-                            <ul class="menu">
-                                <li class="menu-text">Creative Technologist, Researcher, and Musician</li>
-                            </ul>
-                        </div>
-                    </div>
-
-
-
-                    <!-- original content goes in this container -->
-                    <div class="off-canvas-content" data-off-canvas-content>
-
-
-                        <div id="main" role="main" class="container">
-                            {{ content }}
-                        </div>
-
-                        <footer class="row" id="footer">
-                            <div class="large-12 columns">
-                                <hr />
-                                <div class="row">
-                                    <div class="large-6 columns">
-                                        <p>
-                                            {% include svg-icons.html %}
-                                            &copy; Copyright no one at all. Go to town.
-                                        </p>
-                                    </div>
-                                    <!-- <div class="large-6 columns"> -->
-                                    <!-- </div> -->
-
-                                </div>
-                            </div>
-                        </footer>
-                        <!-- close wrapper, no more content after this -->
-                    </div>
-                </div>
-                <!-- END Top Bar -->
-            </div>
-        </div>
+          <nav>
+            <a href="{{ site.baseurl }}/">Blog</a>
+            <a href="{{ site.baseurl }}/about">About</a>
+          </nav>
+        </header>
+      </div>
     </div>
 
+    <div id="main" role="main" class="container">
+      {{ content }}
+    </div>
 
-{% include analytics.html %}
-<script src="{{ site.baseurl }}/js/vendor/jquery.js"></script>
-<script src="{{ site.baseurl }}/js/vendor/what-input.js"></script>
-<script src="{{ site.baseurl }}/js/vendor/foundation.js"></script>
-<script src="{{ site.baseurl }}/js/app.js"></script>
-</body>
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          {% include svg-icons.html %}
+        </footer>
+      </div>
+    </div>
+
+    {% include analytics.html %}
+  </body>
 </html>
