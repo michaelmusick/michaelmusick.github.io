@@ -1,0 +1,74 @@
+---
+---
+
+//
+// IMPORTS
+//
+
+@import "foundation";
+
+
+
+/* Main Wrapper*/
+.main-wrapper {
+    display: flex;
+}
+
+/* CSS for Hero */
+.hero {
+    background: url("{{ site.baseurl }}/images/hero_mountains.jpg") no-repeat center center;
+    background-size: cover;
+    height: 95vh;
+}
+
+
+
+.hero .intro {
+    padding: 3rem;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%); }
+    .hero h1 {
+        color: #392626;
+        font-size: 2rem;
+        line-height: 1.5em;
+        letter-spacing: -0.025em;
+        font-weight: 300;
+        text-align: center; }
+        .hero p {
+            color: #000000;
+            font-size: 1.2rem;
+            line-height: 1.75em;
+            font-weight: 300;
+            text-align: center;
+            margin-bottom: 2rem; }
+            .hero .personal-img {
+                background: url("{{ site.baseurl }}/images/head-shot.jpg") no-repeat center center;
+                background-size: cover;
+                height: 14rem;
+                width: 14rem;
+                border-radius: 50%;
+                display: block;
+                margin: 0 auto; }
+                @media only screen and (min-width: 40.063em) {
+                    .hero .tech-img {
+                        height: 18rem;
+                        width: 18rem; }
+                        .hero h1 {
+                            padding-top: 4.5rem;
+                            text-align: right;
+                            font-size: 2.5rem; }
+                            .hero p {
+                                text-align: right; } }
+
+
+/* Inner Header */
+.header-inner {
+    font-size: 1.5rem;
+    height: 70px;
+}
+
+/* Footer */
+footer {
+
+}

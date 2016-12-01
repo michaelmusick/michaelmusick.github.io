@@ -1,36 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title></title>
-        <description></description>      
-        <link>http://localhost:4000</link>
-        <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-        
-            <item>
-                <title>Welcome to Jekyll!</title>
-                
-                    <description>&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;_posts&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
-&lt;/code&gt; directory.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="http://localhost:4000/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2016-12-01T12:53:20-07:00</updated><id>http://localhost:4000//</id><title type="html">Michael Musick</title><subtitle>I am awesome. I do stuff. I make things. I teach things. hahahahahahahahahahah. hahahahahah.</subtitle><entry><title type="html">You’re up and running!</title><link href="http://localhost:4000/Hello-World/" rel="alternate" type="text/html" title="You're up and running!" /><published>2014-03-03T00:00:00-07:00</published><updated>2014-03-03T00:00:00-07:00</updated><id>http://localhost:4000/Hello-World</id><content type="html" xml:base="http://localhost:4000/Hello-World/">&lt;p&gt;Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).&lt;/p&gt;
 
-</description>
-                
-                <pubDate>Wed, 23 Mar 2016 00:00:00 -0600</pubDate>
-                <link>http://localhost:4000/welcome-to-jekyll.html</link>
-                <guid isPermaLink="true">http://localhost:4000/welcome-to-jekyll.html</guid>
-            </item>
-        
-            <item>
-                <title>Older post</title>
-                
-                    <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel nunc a lacus semper suscipit a id massa. Etiam vel nulla augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nullam mattis odio orci, non aliquam ipsum pretium eu. Nulla scelerisque vel neque vitae consequat. Donec molestie lectus eget rutrum tristique. Pellentesque iaculis augue aliquet, eleifend dolor eget, tempus metus. Ut faucibus quis erat sit amet pulvinar. Proin tristique mollis posuere. Praesent eget urna sit amet leo varius maximus non id nibh. Donec facilisis ante sit amet mauris feugiat iaculis. Integer ac urna neque.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/config.png&quot; alt=&quot;_config.yml&quot; /&gt;&lt;/p&gt;
 
-</description>
-                
-                <pubDate>Tue, 22 Mar 2016 00:00:00 -0600</pubDate>
-                <link>http://localhost:4000/lorem-ipsum.html</link>
-                <guid isPermaLink="true">http://localhost:4000/lorem-ipsum.html</guid>
-            </item>
-        
-    </channel>
-</rss>
+&lt;p&gt;The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the &lt;a href=&quot;https://github.com/barryclark/jekyll-now&quot;&gt;Jekyll Now repository&lt;/a&gt; on GitHub.&lt;/p&gt;</content><summary type="html">Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).</summary></entry></feed>

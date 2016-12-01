@@ -2,8 +2,27 @@
 layout: default
 ---
 
-<main>
-<small><i>main</i></small>
-<h1>{{ page.title }}</h1>
-{{ content }}
-</main>
+<!-- Header Section -->
+<section class="header-inner">
+    <div class="top-bar-left">
+        <ul class="menu">
+            <li class="menu-text"><h1>{{ page.title }}</h1></li>
+        </ul>
+    </div>
+</section>
+<!-- END Header Section -->
+
+<article class="page">
+
+    <div class="entry">
+        <!-- Third Band (Image Right with Text) -->
+
+        <div class="row">
+
+            <div class="large-12 columns">
+                {{ content }}
+            </div>
+        </div>
+
+    </div>
+</article>
