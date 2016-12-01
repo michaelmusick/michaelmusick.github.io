@@ -1,11 +1,11 @@
 ---
 ---
-@import 'bootstrap';
-@import 'syntax-highlighting';
+@import '../_sass/bootstrap';
+@import '../_sass/syntax-highlighting';
 
 
-$scotch-primary: rgb(78, 255, 69);
-$scotch-secondary: #7affc3;
+$scotch-primary: rgb(255, 69, 69);
+$scotch-secondary: #FF7B7B;
 
 %oswald { font-family: 'Oswald', sans-serif; }
 %roboto { font-family: 'Roboto Condensed', sans-serif; }
@@ -13,7 +13,7 @@ $scotch-secondary: #7affc3;
 
 body {
     @extend %roboto;
-    font-size: 3px;
+    font-size: 18px;
     line-height: 30px;
     padding-top: 51px;
     -webkit-font-smoothing: antialiased;
