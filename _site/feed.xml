@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title></title>
+        <description></description>      
+        <link>http://localhost:4000</link>
+        <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
+        
+            <item>
+                <title>Welcome to Jekyll!</title>
+                
+                    <description>&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;_posts&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+&lt;/code&gt; directory.&lt;/p&gt;
+
+</description>
+                
+                <pubDate>Wed, 23 Mar 2016 00:00:00 -0600</pubDate>
+                <link>http://localhost:4000/welcome-to-jekyll.html</link>
+                <guid isPermaLink="true">http://localhost:4000/welcome-to-jekyll.html</guid>
+            </item>
+        
+            <item>
+                <title>Older post</title>
+                
+                    <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel nunc a lacus semper suscipit a id massa. Etiam vel nulla augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nullam mattis odio orci, non aliquam ipsum pretium eu. Nulla scelerisque vel neque vitae consequat. Donec molestie lectus eget rutrum tristique. Pellentesque iaculis augue aliquet, eleifend dolor eget, tempus metus. Ut faucibus quis erat sit amet pulvinar. Proin tristique mollis posuere. Praesent eget urna sit amet leo varius maximus non id nibh. Donec facilisis ante sit amet mauris feugiat iaculis. Integer ac urna neque.&lt;/p&gt;
+
+</description>
+                
+                <pubDate>Tue, 22 Mar 2016 00:00:00 -0600</pubDate>
+                <link>http://localhost:4000/lorem-ipsum.html</link>
+                <guid isPermaLink="true">http://localhost:4000/lorem-ipsum.html</guid>
+            </item>
+        
+    </channel>
+</rss>
