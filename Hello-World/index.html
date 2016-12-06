@@ -1,16 +1,34 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }}</title>
+    <title>You're up and running! – Michael's InClass Site</title>
 
-    {% include meta.html %}
+        <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
+
+" />
+    <meta property="og:description" content="Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
+
+" />
+    
+    <meta name="author" content="Michael's InClass Site" />
+
+    
+    <meta property="og:title" content="You're up and running!" />
+    <meta property="twitter:title" content="You're up and running!" />
+    
 
     <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
-    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+    <link rel="stylesheet" type="text/css" href="/final-site/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="Michael's InClass Site - The Jekyll Site we Built in Class" href="/final-site/feed.xml" />
 
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
 </head>
@@ -28,14 +46,14 @@
                 <div class="title-bar" data-responsive-toggle="widemenu" data-hide-for="medium">
                     <div class="title-bar-left">
                         <button class="menu-icon" type="button" data-open="offCanvasLeft"></button>
-                        <span class="title-bar-title"><a href="{{ site.baseurl }}/">{{ site.name }}</a></span>
+                        <span class="title-bar-title"><a href="/final-site/">Michael's InClass Site</a></span>
                     </div>
                 </div>
 
                 <!-- off-canvas left menu -->
                 <div class="off-canvas position-left" id="offCanvasLeft" data-off-canvas>
                     <ul class="vertical dropdown menu" data-dropdown-menu>
-                        <li><a href="{{site.baseurl}}/About">About</a></li>
+                        <li><a href="/final-site/About">About</a></li>
                         <li><a href="left_item_2">Left item 2</a></li>
                         <li><a href="left_item_3">Left item 3</a></li>
                     </ul>
@@ -46,9 +64,9 @@
                 <div id="widemenu" class="top-bar">
                     <div class="top-bar-left">
                         <ul class="dropdown menu" data-dropdown-menu>
-                            <li class="menu-text"><a href="{{ site.baseurl }}/">{{ site.name }}</a></li>
+                            <li class="menu-text"><a href="/final-site/">Michael's InClass Site</a></li>
                             <li class="has-submenu">
-                                <a href="{{site.baseurl}}/About">About</a>
+                                <a href="/final-site/About">About</a>
                             </li>
                             <!-- <li class="has-submenu">
                                 <a href="#">Item 2</a>
@@ -77,7 +95,25 @@
 
 
                     <div id="main" role="main" class="container">
-                        {{ content }}
+                        <article class="post">
+  <h1>You're up and running!</h1>
+
+  <div class="entry">
+    <p>Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).</p>
+
+<p><img src="/final-site/images/config.png" alt="_config.yml" /></p>
+
+<p>The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the <a href="https://github.com/barryclark/jekyll-now">Jekyll Now repository</a> on GitHub.</p>
+
+  </div>
+
+  <div class="date">
+    Written on March  3, 2014
+  </div>
+
+  
+</article>
+
                     </div>
 
                     <!-- Footer -->
@@ -102,10 +138,11 @@
     </div>
 
 
-    {% include analytics.html %}
-    <script src="{{site.baseurl}}/js/vendor/jquery.js"></script>
-    <script src="{{site.baseurl}}/js/vendor/what-input.js"></script>
-    <script src="{{site.baseurl}}/js/vendor/foundation.js"></script>
-    <script src="{{site.baseurl}}/js/app.js"></script>
+    
+
+    <script src="/final-site/js/vendor/jquery.js"></script>
+    <script src="/final-site/js/vendor/what-input.js"></script>
+    <script src="/final-site/js/vendor/foundation.js"></script>
+    <script src="/final-site/js/app.js"></script>
 </body>
 </html>
