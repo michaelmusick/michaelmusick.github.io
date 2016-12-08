@@ -14,4 +14,4 @@ This site is a Jekyll built site, originally based on the ["Jekyll Now" theme](h
 
 This repository contains the following;
 - The code base for the site
-- [A paper describing the process]()
+- [A paper describing the process](https://github.com/michaelmusick/michaelmusick.github.io/blob/master/paper/MMusick_341Final.md)
