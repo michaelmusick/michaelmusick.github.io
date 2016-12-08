@@ -3,10 +3,10 @@
 #
 
 # Name of your site (displayed in the header)
-name: Michael's InClass Site
+name: 341 WebDev - Final Site Example
 
 # Short bio or description (displayed in the header)
-description: The Jekyll Site we Built in Class
+description: Demonstrating the submission materials for the final project sites.
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png

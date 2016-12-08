@@ -35,9 +35,13 @@
                 <!-- off-canvas left menu -->
                 <div class="off-canvas position-left" id="offCanvasLeft" data-off-canvas>
                     <ul class="vertical dropdown menu" data-dropdown-menu>
-                        <li><a href="{{site.baseurl}}/About">About</a></li>
-                        <li><a href="left_item_2">Left item 2</a></li>
-                        <li><a href="left_item_3">Left item 3</a></li>
+                        {% for p in site.pages %}
+                            {% if p.mainHeading %}
+                                <li>
+                                    <a href="{{ site.baseurl}}{{ p.url }}">{{ p.title }}</a>
+                                </li>
+                            {% endif %}
+                        {% endfor %}
                     </ul>
                 </div>
 
@@ -46,10 +50,16 @@
                 <div id="widemenu" class="top-bar">
                     <div class="top-bar-left">
                         <ul class="dropdown menu" data-dropdown-menu>
-                            <li class="menu-text"><a href="{{ site.baseurl }}/">{{ site.name }}</a></li>
-                            <li class="has-submenu">
-                                <a href="{{site.baseurl}}/About">About</a>
-                            </li>
+                            <li class="menu-text main-menu-text"><a href="{{ site.baseurl }}/" class="main-menu-text">{{ site.name }}</a></li>
+
+                            {% for p in site.pages %}
+                                {% if p.mainHeading %}
+                                    <li class="has-submenu">
+                                        <a href="{{ site.baseurl}}{{ p.url }}">{{ p.title }}</a>
+                                    </li>
+                                {% endif %}
+                            {% endfor %}
+
                             <!-- <li class="has-submenu">
                                 <a href="#">Item 2</a>
                                 <ul class="menu submenu vertical" data-submenu>

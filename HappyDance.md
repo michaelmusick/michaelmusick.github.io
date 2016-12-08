@@ -2,6 +2,7 @@
 layout: page
 title: Happy Dance
 permalink: /happy-dance/
+mainHeading: true
 ---
 
 This is my happy dance.

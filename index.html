@@ -1,99 +1,14 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Michael's InClass Site</title>
-
-        <meta charset="utf-8" />
-    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
-
-    
-    <meta name="description" content="The Jekyll Site we Built in Class">
-    <meta property="og:description" content="The Jekyll Site we Built in Class" />
-    
-    <meta name="author" content="Michael's InClass Site" />
-
-    
-
-    <!--[if lt IE 9]>
-    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-    <link rel="stylesheet" type="text/css" href="/final-site/style.css" />
-    <link rel="alternate" type="application/rss+xml" title="Michael's InClass Site - The Jekyll Site we Built in Class" href="/final-site/feed.xml" />
-
-    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
-</head>
-
-<body>
-
-    <!-- Top Bar and Navigation -->
-    <div class="main-wrapper">
+---
+layout: default
+---
 
 
-        <div class="off-canvas-wrapper">
-            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
-
-                <!-- off-canvas title bar for 'small' screen -->
-                <div class="title-bar" data-responsive-toggle="widemenu" data-hide-for="medium">
-                    <div class="title-bar-left">
-                        <button class="menu-icon" type="button" data-open="offCanvasLeft"></button>
-                        <span class="title-bar-title"><a href="/final-site/">Michael's InClass Site</a></span>
-                    </div>
-                </div>
-
-                <!-- off-canvas left menu -->
-                <div class="off-canvas position-left" id="offCanvasLeft" data-off-canvas>
-                    <ul class="vertical dropdown menu" data-dropdown-menu>
-                        <li><a href="/final-site/About">About</a></li>
-                        <li><a href="left_item_2">Left item 2</a></li>
-                        <li><a href="left_item_3">Left item 3</a></li>
-                    </ul>
-                </div>
-
-
-                <!-- "wider" top-bar menu for 'medium' and up -->
-                <div id="widemenu" class="top-bar">
-                    <div class="top-bar-left">
-                        <ul class="dropdown menu" data-dropdown-menu>
-                            <li class="menu-text"><a href="/final-site/">Michael's InClass Site</a></li>
-                            <li class="has-submenu">
-                                <a href="/final-site/About">About</a>
-                            </li>
-                            <!-- <li class="has-submenu">
-                                <a href="#">Item 2</a>
-                                <ul class="menu submenu vertical" data-submenu>
-                                    <li><a href="left_wide_21">Left wide 1</a></li>
-                                    <li><a href="left_wide_22">Left wide 2</a></li>
-                                    <li><a href="left_wide_23">Left wide 3</a></li>
-                                </ul>
-                            </li> -->
-                        </ul>
-                    </div>
-                    <div class="top-bar-right">
-                        <ul class="menu">
-                            <li class="menu-text">Creative Technologist, Researcher, and Musician</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- original content goes in this container -->
-                <div class="off-canvas-content" data-off-canvas-content>
-
-
-
-
-
-
-
-                    <div id="main" role="main" class="container">
-                        <!-- Hero Section -->
+<!-- Hero Section -->
 <section class="hero">
     <div class="row intro">
         <div class="small-centered medium-uncentered medium-6 large-7 columns">
-            <h1>Michael's InClass Site</h1>
-            <p>Blah blah blah. Hahahaha. When you look up in the sky, the stars will guide your heart so high.</p>
+            <h1>{{ site.name }}</h1>
+            <p>{{site.description}}</p>
         </div>
         <div class="small-centered medium-uncentered medium-6 large-5 columns">
             <div class="personal-img"></div>
@@ -142,51 +57,16 @@
 
 
 <!-- <div class="posts">
-
+{% for post in site.posts %}
 <article class="post">
 
-<h1><a href="/final-site/Hello-World/">You're up and running!</a></h1>
+<h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
 
 <div class="entry">
-<p>Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).</p>
-
-
+{{ post.excerpt }}
 </div>
 
-<a href="/final-site/Hello-World/" class="read-more">Read More</a>
+<a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
 </article>
-
+{% endfor %}
 </div> -->
-
-                    </div>
-
-                    <!-- Footer -->
-
-                    <footer class="row" id="footer">
-                        <div class="large-12 columns">
-                            <hr />
-                            <div class="row">
-                                <div class="large-6 columns">
-                                    <p>&copy; Copyright no one at all. Go to town.</p>
-                                </div>
-
-                            </div>
-                        </div>
-                    </footer>
-
-                    <!-- close wrapper, no more content after this -->
-                </div>
-            </div>
-            <!-- END Top Bar -->
-        </div>
-    </div>
-
-
-    
-
-    <script src="/final-site/js/vendor/jquery.js"></script>
-    <script src="/final-site/js/vendor/what-input.js"></script>
-    <script src="/final-site/js/vendor/foundation.js"></script>
-    <script src="/final-site/js/app.js"></script>
-</body>
-</html>

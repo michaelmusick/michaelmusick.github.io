@@ -2,16 +2,11 @@
 layout: page
 title: About
 permalink: /about/
+mainHeading: true
 ---
 
-Some information about you!
+This site should be used as an example for how you submit your final projects.
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
-
-### Contact me
-
-[email@domain.com](mailto:email@domain.com)
-
-![place holder image](http://placehold.it/400x300&text=[img])
+The most important part is that everything is clearly labeled and organized in your root directory.

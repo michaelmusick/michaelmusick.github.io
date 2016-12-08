@@ -1,6 +1,9 @@
 ---
 ---
 
+// This is main css/scss file for the project.
+// This should be well commented throughout. 
+
 //
 // IMPORTS
 //
@@ -14,7 +17,10 @@
 /* BASE RULES */
 /**************/
 
-
+.main-menu-text {
+    color: rgb(55, 55, 55) !important;
+    padding: 0px;
+}
 
 /* Main Wrapper*/
 .main-wrapper {
@@ -71,8 +77,15 @@
 
 /* Inner Header */
 .header-inner {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     height: 70px;
+    padding-top: 30px;
+    padding-left: 8px;
+    margin-bottom: 40px;
+    @media only screen and (max-width: 40.063em) {
+        padding-left: 0px;
+        margin-left: -5px;
+    }
 }
 
 /* Footer */
